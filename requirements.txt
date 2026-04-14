@@ -1,0 +1,44 @@
+# Core
+tqdm
+numpy
+pandas
+scikit-learn
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# NLP (for ReviewText)
+nltk
+spacy
+
+# Recommendation / Matrix factorization
+implicit
+lightfm
+
+# MLOps
+mlflow
+dvc
+
+# API
+fastapi
+uvicorn
+
+# Data validation
+great-expectations
+
+# Utilities
+python-dotenv
+joblib
+
+# Optional (deep learning)
+torch
+tensorflow
+
+# Database (optional)
+sqlalchemy
+psycopg2-binary
+
+# Testing
+pytest
