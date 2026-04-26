@@ -1,0 +1,4 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = gdrive://https://drive.google.com/drive/folders/1et_UziEu2BukTmYESXS7GYnWRRBrsG4s?usp=sharing
