@@ -3,4 +3,4 @@ customers.csv filter=lfs diff=lfs merge=lfs -text
 transactions_6_months.csv filter=lfs diff=lfs merge=lfs -text
 transactions_5_weeks.csv filter=lfs diff=lfs merge=lfs -text
 test_final.csv filter=lfs diff=lfs merge=lfs -text
-
+train_final.csv filter=lfs diff=lfs merge=lfs -text
