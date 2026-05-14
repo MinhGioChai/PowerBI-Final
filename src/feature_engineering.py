@@ -172,8 +172,7 @@ if __name__ == "__main__":
     customer_prefs = extract_preferences(df_train)
     articles = build_clean_description(articles)
 
-    # Cập nhật thông tin sở thích vào base data trước khi assemble
-    df_train = df_train.merge(customer_prefs, on='customer_id', how='left')
+    # Update interest information in the base data before assembling
     df_test = df_test.merge(customer_prefs, on='customer_id', how='left')
 
     # Assemble Final Datasets
