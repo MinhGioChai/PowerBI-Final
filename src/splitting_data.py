@@ -12,7 +12,7 @@ def prepare_and_split_data():
         return
 
     # Input file paths
-    transactions_path = os.path.join(data_dir, "transactions.csv")
+    transactions_path = os.path.join(data_dir, "transactions_5_weeks.csv")
     customers_path = os.path.join(data_dir, "customers.csv")
     articles_path = os.path.join(data_dir, "articles.csv")
 
