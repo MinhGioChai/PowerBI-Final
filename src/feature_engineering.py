@@ -101,7 +101,8 @@ def build_clean_description(articles_df):
     stopwords = {'the', 'and', 'is', 'in', 'to', 'of', 'a', 'for'}
 
     def process_row(row):
-        fields = ['product_type_name', 'product_group_name', 'graphical_appearance_name', 
+        fields = ['product_type_name','product_type_name','product_type_name', 
+                  'product_group_name', 'graphical_appearance_name', 
                   'perceived_colour_value_name', 'perceived_colour_master_name', 
                   'index_group_name', 'section_name', 'garment_group_name']
         text = ' '.join([str(row[f]) for f in fields]).lower()
@@ -173,6 +174,7 @@ if __name__ == "__main__":
     articles = build_clean_description(articles)
 
     # Update interest information in the base data before assembling
+    df_train = df_train.merge(customer_prefs, on='customer_id', how='left')
     df_test = df_test.merge(customer_prefs, on='customer_id', how='left')
 
     # Assemble Final Datasets
