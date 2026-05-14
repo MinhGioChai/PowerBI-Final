@@ -70,7 +70,7 @@ def run_preprocess():
     df_test, _ = process_transactions(test_raw, price_stats=train_price_stats)
     
     print("\n--- Saving Cleaned Data ---")
-    df_train.to_cvs(BASE_DIR / "train_clean.csv", index=False)
+    df_train.to_csv(BASE_DIR / "train_clean.csv", index=False)
     df_test.to_csv(BASE_DIR / "test_cleaned.csv", index=False)
     
     df_art.to_csv(BASE_DIR / "articles_cleaned.csv", index=False)
