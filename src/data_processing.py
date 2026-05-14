@@ -6,8 +6,8 @@ BASE_DIR = Path("data")
 
 def load_raw_splits():
     print("--- Loading Raw Transaction Splits ---")
-    train = pd.read_csv(BASE_DIR / "train_split.parquet")
-    test = pd.read_parquet(BASE_DIR / "test_split.parquet")
+    train = pd.read_csv(BASE_DIR / "train_split.csv")
+    test = pd.read_parquet(BASE_DIR / "test_split.csv")
     
     articles = pd.read_csv(BASE_DIR / "articles.csv")
     customers = pd.read_csv(BASE_DIR / "customers.csv")
